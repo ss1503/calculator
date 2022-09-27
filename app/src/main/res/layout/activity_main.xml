@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/answerEtxt"
+        android:layout_width="224dp"
+        android:layout_height="58dp"
+        android:ems="10"
+        android:hint="insert here"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.075" />
+
+    <Button
+        android:id="@+id/plusBtn"
+        android:layout_width="70dp"
+        android:layout_height="51dp"
+        android:onClick="plus"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/minusBtn"
+        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.216"
+        android:backgroundTint="@color/black"/>
+
+    <Button
+        android:id="@+id/minusBtn"
+        android:layout_width="70dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="minus"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mulBtn"
+        app:layout_constraintHorizontal_bias="0.99"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.216"
+        android:backgroundTint="@color/black"/>
+
+    <Button
+        android:id="@+id/mulBtn"
+        android:layout_width="70dp"
+        android:layout_height="51dp"
+        android:onClick="mul"
+        android:text="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.621"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.216"
+        android:backgroundTint="@color/black"/>
+
+    <Button
+        android:id="@+id/divBtn"
+        android:layout_width="70dp"
+        android:layout_height="51dp"
+        android:onClick="div"
+        android:text="/"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.908"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.218"
+        android:backgroundTint="@color/black"/>
+
+    <Button
+        android:id="@+id/clearBtn"
+        android:layout_width="119dp"
+        android:layout_height="69dp"
+        android:onClick="clear"
+        android:text="A/C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.357"
+        android:backgroundTint="@color/black"/>
+
+    <Button
+        android:id="@+id/equalBtn"
+        android:layout_width="119dp"
+        android:layout_height="69dp"
+        android:onClick="equal"
+        android:text="="
+        app:iconTint="#B33636"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.355"
+        android:backgroundTint="@color/black"/>
+
+    <Button
+        android:id="@+id/creditBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Credits"
+        android:onClick="credits"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clearBtn"
+        app:layout_constraintVertical_bias="0.923"
+        android:backgroundTint="@color/black"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
